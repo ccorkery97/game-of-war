@@ -166,22 +166,22 @@ function winnerTakesAll() {
 //each game is separated by rounds and i is the counter for those rounds
 //each round is made by the user clicking on the document
 //the game ends when one player has an empty deck
-let i = 1
+//let i = 1
 document.addEventListener('click', function playGame() {
-    //let i = 1
-    //let len = player1Deck.cards.length
-    //while (len != 0)
-    console.log(`Round ${i}`)
-    i++
-    winnerTakesAll()
-    console.log(`PLayer 1 has ${player1Deck.cards.length} cards`)
-    console.log(`PLayer 2 has ${player2Deck.cards.length} cards`)
-    /*if (player1Deck.cards.length > player2Deck.cards.length) {
+    let i = 1
+    let len = player1Deck.cards.length
+    while (len != 0) {
+      console.log(`Round ${i}`)
+      i++
+      winnerTakesAll()
+      console.log(`PLayer 1 has ${player1Deck.cards.length} cards`)
+      console.log(`PLayer 2 has ${player2Deck.cards.length} cards`)
+      if (player1Deck.cards.length > player2Deck.cards.length) {
         len = player2Deck.cards.length
-    } else {
+      } else {
         len = player1Deck.cards.length
+      }
     }
-    */
     if (player1Deck.cards.length == 0)  {
       console.log('Player 2 Wins It All!')
     } else if (player2Deck.cards.length == 0) {
